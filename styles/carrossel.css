@@ -19,3 +19,8 @@
     position: initial;
     margin: .5em o;
 }
+
+.card_descrição{
+    display: flex;
+    justify-content: space-between;
+}
