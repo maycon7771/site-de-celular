@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -52,7 +54,41 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="it a coisa.jpg" alt="livro de terror"></div>
+      <div class="swiper-slide"><img src="CAPA_Princessa-Azul-940x1447.jpg" alt="livro juvenil"></div>
+      <div class="swiper-slide"><img src="capa2.jpg" alt="livro de poesia"></div>
+      <div class="swiper-slide"><img src="enhanced-buzz-7655-1386463868-2.jpg" alt="livro de Ficção"></div> 
+      <div class="swiper-slide"><img src="img/lendas_dofolclore_brasileiro_9788525420879_9788525421890_hd.jpg" alt="livro 100 lendas"></div>
+    </div>
+   
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+   </div>
+  
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+      });
+    </script>
 </body>
+
 
 </html>
