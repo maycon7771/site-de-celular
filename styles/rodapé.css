@@ -37,4 +37,20 @@ hr {
         font-size: 14;
         color: var(--cinza-claro);
     }
+
+    .rodapé_titulo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodapé {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
+    .rodapé {
+        padding: 3em 0 ;
+    }
+    
 }
